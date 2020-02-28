@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f34077e-ffdd-4402-af8f-0e80b13a21f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-generator/renren-generator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course03/course03.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../course03/course03.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/ekapp.apk" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/ekapp.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/html/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/html/teachinglecture/addlecturetask.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/html/teachinglecture/addlecturetask.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/js/model/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/mobile/js/model/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/statics/js/modules/lecture/hos_lecturecomment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/main/resources/statics/js/modules/lecture/hos_lecturecomment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/test/java/io/renren/DynamicDataSourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/src/test/java/io/renren/DynamicDataSourceTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\maven-repository" />
+        <option name="mavenHome" value="D:/java/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\java\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YFFA6QJ82UDZvRJZoTjEdszMw8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../course06" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\LearningSpace\SpringBoot\JavaLearning-Spring-boot\course04\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Course05Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="course04" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itcodai.course05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itcodai.course05.Course05Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Course05Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\yuxingsheng\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f34077e-ffdd-4402-af8f-0e80b13a21f0" name="Default Changelist" comment="" />
+      <created>1582530288922</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582530288922</updated>
+      <workItem from="1582530295403" duration="7575000" />
+      <workItem from="1582783992532" duration="7663000" />
+      <workItem from="1582869122616" duration="3734000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

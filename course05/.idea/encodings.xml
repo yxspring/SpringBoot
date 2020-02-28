@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../course03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../学习项目/renren-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-generator" charset="UTF-8" />
+  </component>
+</project>

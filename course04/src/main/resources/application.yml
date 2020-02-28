@@ -1,0 +1,12 @@
+logging:
+  config: src/main/resources/logback.xml
+  level:
+    com.itcodai.course03.dao: trace
+#spring:
+#  profiles:
+#    active:
+#      - dev
+spring:
+  profiles:
+    active:
+      - pro

@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "url",
+      "type": "com.itcodai.course05.bean.MicroServiceUtl",
+      "sourceType": "com.itcodai.course05.bean.MicroServiceUtl"
+    }
+  ],
+  "properties": [
+    {
+      "name": "url.order-url",
+      "type": "java.lang.String",
+      "sourceType": "com.itcodai.course05.bean.MicroServiceUtl"
+    },
+    {
+      "name": "url.shopping-url",
+      "type": "java.lang.String",
+      "sourceType": "com.itcodai.course05.bean.MicroServiceUtl"
+    },
+    {
+      "name": "url.user-url",
+      "type": "java.lang.String",
+      "sourceType": "com.itcodai.course05.bean.MicroServiceUtl"
+    }
+  ],
+  "hints": []
+}

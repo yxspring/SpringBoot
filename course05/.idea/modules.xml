@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/renren-admin.iml" filepath="$PROJECT_DIR$/../../学习项目/renren-security/renren-admin/renren-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-api/renren-api.iml" filepath="$PROJECT_DIR$/../../学习项目/renren-security/renren-api/renren-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-common/renren-common.iml" filepath="$PROJECT_DIR$/../../学习项目/renren-security/renren-common/renren-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-generator/renren-generator.iml" filepath="$PROJECT_DIR$/../../学习项目/renren-security/renren-generator/renren-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../学习项目/renren-security/renren-security.iml" filepath="$PROJECT_DIR$/../../学习项目/renren-security/renren-security.iml" />
+    </modules>
+  </component>
+</project>
