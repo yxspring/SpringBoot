@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.itcodai.course01.Course01ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.194 s - in com.itcodai.course01.Course01ApplicationTests
