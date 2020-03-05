@@ -1,7 +1,7 @@
 <configuration>
     <!--定义日志输出格式和存储路径-->
     <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
-    <property name="FILE_PATH" value="D:/logs/course03/demo.%d{yyyy-MM-dd}.%i.log" />
+    <property name="FILE_PATH" value="D:/logs/course07/demo.%d{yyyy-MM-dd}.%i.log" />
     <!--定义控制台输出
     使用 <appender> 节点设置个控制台输出（class="ch.qos.logback.core.ConsoleAppender"）的配置，定义为 “CONSOLE”。
     使用上面定义好的输出格式（LOG_PATTERN）来输出，使用 ${} 引用进来即可。
@@ -35,7 +35,7 @@
         </encoder>
     </appender>
     <!--定义日志输出级别-->
-    <logger name="com.itcodai.course03" level="INFO" />
+    <logger name="com.itcodai.course07" level="INFO" />
         <root level="INFO">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="FILE" />

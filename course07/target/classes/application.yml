@@ -1,4 +1,10 @@
 logging:
   config: src/main/resources/logback.xml
   level:
-    com.itcodai.course03.dao: trace
+    com.itcodai.course07.dao: trace
+spring:
+  thymeleaf:
+    cache: false #关闭缓存
+  mvc:
+    view:
+      suffix: .html
