@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @ProjectName: course07
@@ -18,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/thymeleaf")
 public class ThymeleafController {
-    @GetMapping("/test404")
+    @RequestMapping("/test404" )
     public String test404(){
         return "index";
     }
