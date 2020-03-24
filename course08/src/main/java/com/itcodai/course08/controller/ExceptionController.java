@@ -1,12 +1,11 @@
 package com.itcodai.course08.controller;
 
+import com.itcodai.course08.exception.BusinessErrorException;
+import com.itcodai.course08.exception.BusinessMsgEnum;
 import com.itcodai.course08.util.JsonResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 /**
@@ -27,6 +26,21 @@ public class ExceptionController {
                            @RequestParam("pass") String pass){
         logger.info("name:{}",name);
         logger.info("pass:{}",pass);
+        return new JsonResult();
+    }
+    @GetMapping("/null/point/exception")
+    public JsonResult testNullPointException() {
+        String str = null;
+        str.length();
+        return new JsonResult();
+    }
+    @GetMapping("/business")
+    public JsonResult testException(){
+        try{
+            int i=1/0;
+        }catch (Exception e){
+            throw new BusinessErrorException(BusinessMsgEnum.UNEXPECTED_EXCEPTION);
+        }
         return new JsonResult();
     }
 }

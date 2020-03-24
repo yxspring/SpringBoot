@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="trip-web:war">
+    <output-path>$PROJECT_DIR$/../../tripweb/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>trip-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="trip-web.war">
+      <element id="artifact" artifact-name="trip-web:war exploded" />
+    </root>
+  </artifact>
+</component>
