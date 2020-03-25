@@ -18,9 +18,9 @@ public class BusinessErrorException  extends RuntimeException {
     /*异常信息*/
     private String message;
 
-    public BusinessErrorException(String code, String message) {
-        this.code = code;
-        this.message = message;
+    public BusinessErrorException(BusinessMsgEnum em) {
+        this.code = em.code();
+        this.message = em.msg();
     }
 
     public static long getSerialVersionUID() {

@@ -50,7 +50,7 @@ public class GlobalExceptionHandler {
     public JsonResult handleBusinessError(BusinessErrorException ex){
         String code=ex.getCode();
         String message=ex.getMessage();
-        return new JsonResult();
+        return new JsonResult(code,message);
     }
 
     /*系统异常 总的Exception处理*/
