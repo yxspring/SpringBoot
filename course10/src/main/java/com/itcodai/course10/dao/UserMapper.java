@@ -1,6 +1,7 @@
 package com.itcodai.course10.dao;
 
 import com.itcodai.course10.entity.User;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -14,12 +15,19 @@ import java.util.List;
  * @Version: 1.0
  */
 public interface UserMapper {
-
+    /*@Select("select * from user where id = #{id}")
+    @Results({
+            @Result(property = "username",column = "user_name"),
+            @Result(property = "password",column = "password")
+    })
+    User getUser(int id);*/
+    @Select("select * from user where id = #{id}")
+    @ResultMap("BaseResultMap")
     User getUser(int id);
+    @Select("select * from user where id=#{id} and user_name=#{name}")
+    User getUserByIdAndName(@Param("id") int id, @Param("name")String name);
 
-    User getUserByIdAndName(int id,String name);
-
-
+    @Select("select * from user")
     List<User> getAll();
 
     //使用xml方式
