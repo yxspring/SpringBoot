@@ -13,7 +13,9 @@ import java.util.List;
  * @Date: 2020/3/27 10:52
  * @Version: 1.0
  */
+
 public interface UserService {
+
     User getUser(int id);
 
     List<User> getAll();

@@ -3,6 +3,7 @@ package com.itcodai.course10.service.impl;
 import com.itcodai.course10.dao.UserMapper;
 import com.itcodai.course10.entity.User;
 import com.itcodai.course10.service.UserService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
  * @Date: 2020/3/27 10:55
  * @Version: 1.0
  */
+@Service
 public class UserServiceImpl  implements UserService {
 
     @Resource

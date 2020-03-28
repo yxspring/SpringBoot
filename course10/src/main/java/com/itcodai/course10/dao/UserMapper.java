@@ -23,6 +23,6 @@ public interface UserMapper {
     List<User> getAll();
 
     //使用xml方式
-    User getUserByName(String name);
+    User getUserByName(String username);
 
 }
