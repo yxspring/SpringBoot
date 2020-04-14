@@ -1,7 +1,11 @@
 package com.itcodai.course12.service;
 
+import com.itcodai.course12.entity.MyEvent;
 import com.itcodai.course12.entity.User;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @ProjectName: course12
@@ -14,8 +18,14 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService {
-        /*获取用户信息*/
+    @Resource
+    private ApplicationContext applicationContext;
+    /*发布事件*/
     public User getUser(){
-        return new User(1L,"yxs","123456");
+        User user= new User(1L,"yxs","123456");
+        MyEvent event=new MyEvent(this,user);
+        applicationContext.publishEvent(event);
+        return user;
     }
+
 }
