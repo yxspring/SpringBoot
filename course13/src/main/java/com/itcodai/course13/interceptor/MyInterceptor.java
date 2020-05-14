@@ -1,4 +1,5 @@
 package com.itcodai.course13.interceptor;
+import com.itcodai.course13.interception.UnInterception;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.method.HandlerMethod;
@@ -25,6 +26,20 @@ public class MyInterceptor implements HandlerInterceptor {
         Method method = handlerMethod.getMethod();
         String methodName = method.getName();
         logger.info("====拦截到了方法：{}，在该方法执行之前执行====", methodName);
+
+        // 通过方法，可以获取该方法上的自定义注解，然后通过注解来判断该方法是否要被拦截
+        // @UnInterception 是我们自定义的注解
+        UnInterception unInterception= method.getAnnotation(UnInterception.class);
+        if(null != unInterception){
+            return true;
+        }
+
+        //判断用户是否登录
+        String token=request.getParameter("token");
+        if(token==null||"".equals(token)){
+            logger.info("用户没有登录！没有权限***进行一系列操作！");
+            return false;
+        }
 
         // 返回true才会继续执行，返回false则取消当前请求
         return true;
