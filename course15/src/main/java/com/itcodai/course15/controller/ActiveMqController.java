@@ -34,4 +34,10 @@ public class ActiveMqController {
         producer.sendMessage(queue, "Queue: hello activemq!");
         return "success";
     }
+    @GetMapping("/send/topic")
+    public String sendTopicMessage(){
+        logger.info("===开始发送订阅消息===");
+        producer.sendMessage(topic,"Topic:hello activemq!");
+        return "success";
+    }
 }
