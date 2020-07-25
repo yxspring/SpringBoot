@@ -8,58 +8,90 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
- * @ProjectName: course14
- * @Package: com.itcodai.course14.service
- * @ClassName: RedisService
- * @Author: yuxingsheng
- * @Description: 通过该对象读写数据库
- * @Date: 2020/7/24 17:17
- * @Version: 1.0
+ * RedisService
+ * @author shengwu ni
+ * @date 2018/08/13 17:54
  */
 @Service
 public class RedisService {
+
     @Resource
     private StringRedisTemplate stringRedisTemplate;
+
+
     /**
-    * set redis:string类型
-    * */
-    public void setString(String key,String value){
-        ValueOperations<String,String> valueOpetations=stringRedisTemplate.opsForValue();
-        valueOpetations.set(key, value);
+     * set redis: string类型
+     * @param key key
+     * @param value value
+     */
+    public void setString(String key, String value){
+        ValueOperations<String, String> valueOperations = stringRedisTemplate.opsForValue();
+        valueOperations.set(key, value);
     }
+
     /**
-     * get redis :string类型
-     *
-     * */
+     * get redis: string类型
+     * @param key key
+     * @return
+     */
     public String getString(String key){
         return stringRedisTemplate.opsForValue().get(key);
     }
+
     /**
-     * set redis:hash类型
-     * */
-    public void setHash(String key,String filedKey,String value){
-        HashOperations<String,Object,Object> hashOperations= stringRedisTemplate.opsForHash();
-        hashOperations.put(key,filedKey,value);
+     * set redis: hash类型
+     * @param key key
+     * @param filedKey filedkey
+     * @param value value
+     */
+    public void setHash(String key, String filedKey, String value){
+        HashOperations<String, Object, Object> hashOperations = stringRedisTemplate.opsForHash();
+        hashOperations.put(key, filedKey, value);
     }
+
     /**
-     * get redis :hash类型
-     * */
-    public String getHash(String key,String filedKey){
-        return (String) stringRedisTemplate.opsForHash().get(key,filedKey);
+     * get redis: hash类型
+     * @param key key
+     * @param filedkey filedkey
+     * @return
+     */
+    public String getHash(String key, String filedkey){
+        return (String) stringRedisTemplate.opsForHash().get(key, filedkey);
     }
+
     /**
-     * set redis: List 类型
-     * */
-    public void setList(String key,String value){
-        ListOperations<String,String> listOperations= stringRedisTemplate.opsForList();
-        listOperations.leftPush(key,value);
+     * set redis:list类型
+     * @param key key
+     * @param value value
+     * @return
+     */
+    public long setList(String key, String value){
+        ListOperations<String, String> listOperations = stringRedisTemplate.opsForList();
+        return listOperations.leftPush(key, value);
     }
+
     /**
-     * get redis:List 类型
-     * */
-    public List<String> getList(String key, Integer start, Integer end){
-       return  stringRedisTemplate.opsForList().range(key,start,end);
+     * get redis:list类型
+     * @param key key
+     * @param start start
+     * @param end end
+     * @return
+     */
+    public List<String> getList(String key, long start, long end){
+        return stringRedisTemplate.opsForList().range(key, start, end);
     }
+
+    /**
+     * 设置key失效时间
+     * @param key key
+     * @param timeout timeout
+     * @return
+     */
+    public boolean setTimeOut(String key, long timeout){
+        return stringRedisTemplate.expire(key, timeout, TimeUnit.SECONDS);
+    }
+
 }
