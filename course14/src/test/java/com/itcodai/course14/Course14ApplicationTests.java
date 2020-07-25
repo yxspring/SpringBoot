@@ -22,7 +22,7 @@ class Course14ApplicationTests {
    @Resource
    private RedisService redisService;
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	    //测试redis的String类型
 	    redisService.setString("weichat","yxspring");
 	    logger.info("测试redis的String类型:{}",redisService.getString("weichat"));

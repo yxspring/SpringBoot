@@ -4,6 +4,7 @@ import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -17,6 +18,7 @@ import java.util.List;
  * @Date: 2020/7/24 17:17
  * @Version: 1.0
  */
+@Service
 public class RedisService {
     @Resource
     private StringRedisTemplate stringRedisTemplate;
