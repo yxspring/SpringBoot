@@ -1,9 +1,12 @@
 package com.itcodai.course16.realm;
 
+import com.itcodai.course16.entity.User;
 import com.itcodai.course16.service.UserService;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -37,6 +40,18 @@ public class MyRealm extends AuthorizingRealm {
 
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
-        return null;
+       //根据token获取用户名
+        String username=(String)authenticationToken.getPrincipal();
+        //根据用户名从数据库中查询该用户
+        User user=userService.getByUsername(username);
+        if(user!=null){
+            SecurityUtils.getSubject().getSession().setAttribute("user",user);
+            //传入用户名和密码进行身份认证。并返回认证信息
+            AuthenticationInfo authcInfo=new SimpleAuthenticationInfo(user.getUsername(),user.getPassword(),"myRealm");
+            return authcInfo;
+        }else{
+            return null;
+        }
+
     }
 }
