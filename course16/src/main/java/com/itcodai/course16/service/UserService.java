@@ -7,19 +7,13 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.Set;
 
-/**
- * @ProjectName: course16
- * @Package: com.itcodai.course16.service
- * @ClassName: UserService
- * @Author: yuxingsheng
- * @Description: 用户Service
- * @Date: 2020/7/25 16:12
- * @Version: 1.0
- */
 @Service
 public class UserService {
+
     @Resource
     private UserDao userDao;
+
+
     public User getByUsername(String username) {
         return userDao.getByUsername(username);
     }

@@ -3,7 +3,7 @@ server:
 
 # 数据库地址
 datasource:
-  url: localhost:3306/blog_test
+  url: localhost:3306/springboot_shiro
 
 spring:
   datasource: # 数据库配置
