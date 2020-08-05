@@ -21,7 +21,8 @@ public class IndexController {
         //索引所在的目录
         String indexDir="D:\\java\\Springboot\\SpringBoot\\course17\\lucene2";
         //要查询的字符
-        String q="南京文明";
+        //String q="南京文明";
+        String q="南京文化";
         try {
             List<String>list= ChineseSearch.search(indexDir,q);
             model.addAttribute("list",list);
