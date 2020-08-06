@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java1234.mapper.OrderMapper">
+
+    <resultMap type="Order" id="OrderResult">
+    </resultMap>
+
+    <update id="update" parameterType="Order">
+        update t_order set status=#{status} where orderId=#{orderId}
+    </update>
+
+    <select id="getByOrderId" parameterType="Order" resultType="Order">
+        select * from t_order where orderId=#{orderId}
+    </select>
+
+
+</mapper>
